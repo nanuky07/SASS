@@ -1,6 +1,26 @@
+//Variaveis
 $corbranca: #FFF;
 $cor-padrao: #c24e4b;
 $cor-axiliar: #1e2c35;
+
+//Mixin
+@mixin image-replacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  
+}
+
+@mixin borda-arredonda($raio : 0.3em) {
+  -webkit-border-radius: $raio;
+  border-radius: $raio;
+  
+}
+
+@mixin sombra-padrão {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  
+}
 
 /** Geral **/
 body {
@@ -99,9 +119,8 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredonda(100px);
+  @include sombra-padrão;
   font-weight: bold;
 }
 
@@ -138,9 +157,7 @@ header .container {
   display: inline-block;
   width: 50px;
   height: 60px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  @include image-replacement;
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
@@ -224,10 +241,8 @@ header .container {
   color: $corbranca;
   width: 210px;
   height: 38px;
-  font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredonda;
+  @include sombra-padrão;
   margin-left: 2em;
 }
 
@@ -310,8 +325,7 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredonda;
   border: 2px solid #ccc;
 }
 
@@ -323,9 +337,8 @@ textarea {
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  @include borda-arredonda;
+  @include sombra-padrão;
 }
 
 /** Footer **/
@@ -405,9 +418,7 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  @include image-replacement;
   margin-left: 1em;
 }
 
