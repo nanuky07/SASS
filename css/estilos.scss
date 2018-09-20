@@ -96,11 +96,11 @@ header .container {
   color: white;
   height: 330px;
   padding-top: 10em;
-}
-
-.destaque p {
+   p{
   width: 30em;
 }
+}
+
 
 .destaque p:first-child {
   width: 30em;
@@ -181,10 +181,10 @@ header .container {
 /** Planos **/
 .planos {
   background: #$cor-axiliar;
-}
 
-.planos h2 {
+  h2 {
   color:$corbranca;
+}
 }
 
 .plano {
@@ -193,13 +193,8 @@ header .container {
   display: inline-block;
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
-}
 
-.plano:hover {
-  background: #dedede;
-}
-
-.plano h3 {
+  h3 {
   color: $corbranca;
   font-size: 1.8em;
   background: $cor-padrao;
@@ -209,31 +204,36 @@ header .container {
   margin-top: 0;
 }
 
-.plano div {
+&:hover {
+  background: #dedede;
+}
+
+div {
   text-align: center;
   color: $cor-padrao;
   font-size: 2.75em;
 }
+}
 
 .itens-plano {
   padding-left: 1.2em;
-}
-
-.itens-plano li {
+  li {
   font-size: 1em;
   list-style: none;
   border-bottom: 1px solid #acacac;
   padding: .5em;
   width: 14.8em;
-}
-
-.itens-plano li:last-child {
+  
+  &:last-child {
   border: 0;
+  }
+}
+span {
+  float: right;
+  }
+  
 }
 
-.itens-plano span {
-  float: right;
-}
 
 .plano button {
   background: $cor-padrao;

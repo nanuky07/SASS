@@ -73,7 +73,6 @@ header .container {
   height: 330px;
   padding-top: 10em;
 }
-
 .destaque p {
   width: 30em;
 }
@@ -160,7 +159,6 @@ header .container {
 .planos {
   background: # #1e2c35;
 }
-
 .planos h2 {
   color: #FFF;
 }
@@ -172,11 +170,6 @@ header .container {
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
 }
-
-.plano:hover {
-  background: #dedede;
-}
-
 .plano h3 {
   color: #FFF;
   font-size: 1.8em;
@@ -186,7 +179,9 @@ header .container {
   padding-top: 0.6em;
   margin-top: 0;
 }
-
+.plano:hover {
+  background: #dedede;
+}
 .plano div {
   text-align: center;
   color: #c24e4b;
@@ -196,7 +191,6 @@ header .container {
 .itens-plano {
   padding-left: 1.2em;
 }
-
 .itens-plano li {
   font-size: 1em;
   list-style: none;
@@ -204,11 +198,9 @@ header .container {
   padding: 0.5em;
   width: 14.8em;
 }
-
 .itens-plano li:last-child {
   border: 0;
 }
-
 .itens-plano span {
   float: right;
 }
