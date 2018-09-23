@@ -1,0 +1,134 @@
+/** Sobre **/
+.sobre {
+  background: #ebebeb;
+}
+
+.duas-colunas {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  columns: 1;
+}
+
+.duas-colunas h3 {
+  margin: 0;
+}
+
+.sobre p {
+  font: .9em/1.8 sans-serif;
+}
+
+.sobre p:first-child {
+  margin-bottom: 3em;
+}
+
+.plataformas {
+  padding: 0;
+}
+
+.plataformas li {
+  display: inline-block;
+  width: 50px;
+  height: 60px;
+  @include image-replacement;
+  background-position: center;
+  margin: 1em 1.5em 0 0;
+}
+
+.plataformas li:nth-child(1) {
+  background-image: url(../imagens/logo-apple.png);
+}
+
+.plataformas li:nth-child(2) {
+  background-image: url(../imagens/logo-android.png);
+}
+
+.plataformas li:nth-child(3) {
+  background-image: url(../imagens/logo-windows.png);
+}
+
+.plataformas li:nth-child(4) {
+  background-image: url(../imagens/logo-blackberry.png);
+}
+
+/** Planos **/
+.planos {
+  background: $cor-axiliar;
+
+  h2 {
+  color:$corbranca;
+}
+}
+
+.plano {
+  background: white;
+  width: 18em;
+  display: inline-block;
+  margin: 1em 0 0 1.4em;
+  padding-bottom: 2em;
+
+  h3 {
+  color: $corbranca;
+  font-size: 1.8em;
+  background: $cor-padrao;
+  text-align: center;
+  height: 2em;
+  padding-top: .6em;
+  margin-top: 0;
+}
+
+&:hover {
+  background: #dedede;
+}
+
+div {
+  text-align: center;
+  color: $cor-padrao;
+  font-size: 2.75em;
+}
+}
+
+.itens-plano {
+  padding-left: 1.2em;
+  li {
+  font-size: 1em;
+  list-style: none;
+  border-bottom: 1px solid #acacac;
+  padding: .5em;
+  width: 14.8em;
+  
+  &:last-child {
+  border: 0;
+  }
+}
+span {
+  float: right;
+  }
+  
+}
+
+
+.plano button {
+  background: $cor-padrao;
+  border: 0;
+  color: $corbranca;
+  width: 210px;
+  height: 38px;
+  @include borda-arredonda;
+  @include sombra-padrão;
+  margin-left: 2em;
+}
+
+.icone-check, .icone-x {
+  background: url(../imagens/sprite.png) no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.icone-check {
+  background-position: -5px -5px;
+}
+
+.icone-x {
+  background-position: -33px -5px;
+}
