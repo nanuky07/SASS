@@ -34,7 +34,7 @@
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  @include borda-arredonda(100px);
-  @extend %sombra-padrão;
+   @include border-radius(100px);
+  @include box-shadow(black  0 2px 6.65px);
   font-weight: bold;
 }
