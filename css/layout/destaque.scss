@@ -5,9 +5,9 @@
   background-size: cover;
   color: white;
   height: 330px;
-  padding-top: 10em;
+  padding-top: multiplica(10);
    p{
-  width: 30em;
+  width: multiplica(30);
 }
 
 @media #{$mq-mobile}{

@@ -17,6 +17,10 @@
   
 }
 
+@function multiplica($multiplicador){
+   @return round($multiplicador * $tamanho-padrao);
+}
+
 @import "compass/css3";
 
 @import "compass/utilities";

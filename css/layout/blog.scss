@@ -29,7 +29,7 @@
 }
 
 .post-destaque {
-  margin-right: 2em;
+  margin-right: multiplica(2);
 }
 
 .post-destaque img {
@@ -40,8 +40,8 @@
   text-decoration: none;
   color: black;
   background: url(../imagens/icone-relogio.png) left center no-repeat;
-  padding-left: 2.5em;
-  height: 1.7em;
+  padding-left: multiplica(2.5);
+  height: multiplica(1.7);
   display: block;
 }
 
